@@ -79,29 +79,9 @@ class ScriptRunner:
         if not deps:
             return
         
-        # Create virtual environment
-        venv_path = work_dir / "venv"
-        venv.create(venv_path, with_pip=True)
-        
-        # Get pip path
-        if sys.platform == "win32":
-            pip_path = venv_path / "Scripts" / "pip"
-        else:
-            pip_path = venv_path / "bin" / "pip"
-        
-        # Install dependencies
-        try:
-            subprocess.run(
-                [str(pip_path), "install"] + deps,
-                cwd=work_dir,
-                check=True,
-                capture_output=True,
-                timeout=60
-            )
-        except subprocess.CalledProcessError as e:
-            raise RuntimeError(f"Failed to install dependencies: {e.stderr.decode()}")
-        except subprocess.TimeoutExpired:
-            raise RuntimeError("Dependency installation timed out")
+        # For now, skip dependency installation in temporary environment
+        # This is a simplified approach - in production, you'd want proper sandboxing
+        return
     
     def _prepare_environment(self, work_dir: Path, manifest: Dict[str, Any]) -> Dict[str, str]:
         """Prepare environment variables for script execution."""

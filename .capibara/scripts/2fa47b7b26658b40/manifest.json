@@ -1,0 +1,23 @@
+{
+  "fingerprint": "37580241224b6d06",
+  "prompt_sha": "2108e0163c86504f",
+  "context_sha": "e0b2f8469b345a53",
+  "language": "python",
+  "entry": "script.py",
+  "runtime": {
+    "python": "3.11"
+  },
+  "deps": [],
+  "allow": {
+    "network": false,
+    "fs": []
+  },
+  "template_version": "1.0.0",
+  "created_at": "2025-09-28T23:33:54.353872",
+  "outputs": {
+    "artifacts": "list[str]",
+    "output": "dict",
+    "raw": "dict"
+  },
+  "aliases": {}
+}

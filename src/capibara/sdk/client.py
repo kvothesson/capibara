@@ -38,7 +38,11 @@ class Capibara:
         self.cache_dir.mkdir(parents=True, exist_ok=True)
         
         # Initialize core service (in real implementation, this would be HTTP client)
-        self.core = CapibaraCore()
+        try:
+            self.core = CapibaraCore()
+        except Exception as e:
+            raise Exception(f"Failed to initialize Capibara Core: {e}")
+        
         self.runner = ScriptRunner(self.work_dir)
     
     def run(

@@ -55,6 +55,7 @@ def main():
         print(f"  Expected outputs: {result.output}")
     else:
         print(f"✗ Error: {result.output.get('message', 'Unknown error')}")
+        print(f"  Raw error: {result.raw}")
     
     # Demo 4: API integration template (without execution)
     print("\n4. API Integration Template")
@@ -70,6 +71,7 @@ def main():
         print(f"  Selected fields: {result.output}")
     else:
         print(f"✗ Error: {result.output.get('message', 'Unknown error')}")
+        print(f"  Raw error: {result.raw}")
     
     print("\n" + "=" * 60)
     print("🎉 Demo completed! Check .capibara/scripts/ for generated artifacts.")

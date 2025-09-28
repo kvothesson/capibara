@@ -30,6 +30,9 @@ class SecurityManager:
             
             # Common file formats
             "yaml", "toml", "configparser", "argparse", "click",
+            
+            # Common HTML/formatting libraries
+            "json2html", "jinja2", "markdown", "beautifulsoup4", "bs4",
         }
         
         self.blocked_patterns = [
