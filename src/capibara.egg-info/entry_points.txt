@@ -1,0 +1,2 @@
+[console_scripts]
+capibara = capibara.cli:main

@@ -1,0 +1,28 @@
+{
+  "fingerprint": "97cd49ddf33f6b53",
+  "prompt_sha": "a0437638f994983e",
+  "context_sha": "a1f003f00d8b9fcf",
+  "language": "python",
+  "entry": "script.py",
+  "runtime": {
+    "python": "3.11"
+  },
+  "deps": [
+    "requests==2.31.0"
+  ],
+  "allow": {
+    "network": true,
+    "fs": []
+  },
+  "template_version": "1.0.0",
+  "created_at": "2025-09-28T22:42:35.658810",
+  "outputs": {
+    "title": "str",
+    "price": "float",
+    "currency": "str",
+    "condition": "str",
+    "available_quantity": "int",
+    "sold_quantity": "int"
+  },
+  "aliases": {}
+}

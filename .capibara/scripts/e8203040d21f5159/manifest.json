@@ -1,0 +1,19 @@
+{
+  "fingerprint": "26ffc8b69a70e709",
+  "prompt_sha": "fa1944cb0f76d252",
+  "context_sha": "2fc762dc28ed0301",
+  "language": "python",
+  "entry": "script.py",
+  "runtime": {
+    "python": "3.11"
+  },
+  "deps": [],
+  "allow": {
+    "network": false,
+    "fs": []
+  },
+  "template_version": "1.0.0",
+  "created_at": "2025-09-28T22:42:49.243295",
+  "outputs": {},
+  "aliases": {}
+}

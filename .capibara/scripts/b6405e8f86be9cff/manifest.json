@@ -1,0 +1,25 @@
+{
+  "fingerprint": "4548843a4d410fed",
+  "prompt_sha": "db6a152b0aae7d76",
+  "context_sha": "fd2ec00a78fa0d40",
+  "language": "python",
+  "entry": "script.py",
+  "runtime": {
+    "python": "3.11"
+  },
+  "deps": [
+    "moviepy==1.0.3"
+  ],
+  "allow": {
+    "network": false,
+    "fs": []
+  },
+  "template_version": "1.0.0",
+  "created_at": "2025-09-28T22:42:26.812996",
+  "outputs": {
+    "artifacts": "list[str]",
+    "fps": "int",
+    "duration": "float"
+  },
+  "aliases": {}
+}
