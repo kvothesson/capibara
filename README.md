@@ -1,5 +1,10 @@
 # Capibara 🦫 – Technical Specification
 
+[![GitHub](https://img.shields.io/github/v/release/kvothesson/capibara?style=flat-square)](https://github.com/kvothesson/capibara)
+[![Python](https://img.shields.io/badge/python-3.11+-blue?style=flat-square)](https://python.org)
+[![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)](LICENSE)
+[![Status](https://img.shields.io/badge/status-MVP-orange?style=flat-square)](https://github.com/kvothesson/capibara)
+
 ## 1. Overview
 **Capibara** is a developer tool that converts natural language prompts into **executable scripts**, caches them inside the user’s repository, and runs them in a controlled environment.  
 
@@ -201,7 +206,7 @@ Fingerprint = `hash(prompt_normalized + context_normalized + language + template
 
 1. **Clone and setup:**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/kvothesson/capibara.git
    cd capibara
    ./setup_dev.sh
    source venv/bin/activate
